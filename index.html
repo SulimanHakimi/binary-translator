@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
-    <title>Translator</title>
-</head>
-<body>
-    <div class="contenar">
-        <div class="inputs">
-            <label for="english">english to binary</label>
-            <input type="text" name="" id="english">
-            <label for="binary">binary to english</label>
-            <input type="text" name="" id="binary" > 
-            <div class="btns">
-                <input type="button" value="convert" onclick="convertIt()" id="convert">
-                <input type="button" value="clear" onclick="cleanIt()" id="clear">
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
 
-            <p id="output"></p>
+    <title>Translator</title>
+  </head>
+  <body>
+    <div class="contenar">
+      <div class="inputs">
+        <label for="english">english to binary</label>
+        <input type="text" name="" id="english" />
+        <label for="binary">binary to english</label>
+        <input type="text" name="" id="binary" />
+        <div class="btns">
+          <input type="button" value="convert" id="convert" />
+          <input type="button" value="clear" id="clear" />
         </div>
+
+        <p id="output">
+        </p>
+      </div>
     </div>
-</body>
-<script src="app.js"></script>
+  </body>
+  <script src="app.js"></script>
 </html>
