@@ -37,37 +37,24 @@ function cleanIt() {
 clean.addEventListener("click", cleanIt);
 
 
+document.getElementById("toEnglish").addEventListener("click", convertBinary);
 
+function convertBinary() {
+  let binary_input = document.getElementById("binary").value;
 
+  let data = binary_input.split(" ");
+  let result = "";
+  // alert(data)
+  for(let i = 0; i < data.length; i++){
+    // convert word to decimal
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function convertBinary(a) {
-//   const binaryNumbers = a.match(/.{1,8}/g);
+    let decimal = parseInt(data[i], 2)
+    result += String.fromCharCode(decimal)
+  }
   
-//   const characters = binaryNumbers.map((binaryNumber)=> {
-//     return String.fromCharCode(parseInt(binaryNumber,));
-//   });
-  
-//   return characters.join("");
-// }
 
-// const a = `${binary_input}`;
-// const result = convertBinary(a);
-// output.innerText = result;
+  output.innerText = result
+
+}
 
 
-// convert.addEventListener("click",convertBinary)
