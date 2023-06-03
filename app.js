@@ -37,7 +37,7 @@ function cleanIt() {
 clean.addEventListener("click", cleanIt);
 
 
-document.getElementById("toEnglish").addEventListener("click", convertBinary);
+convert.addEventListener("click", convertBinary);
 
 function convertBinary() {
   let binary_input = document.getElementById("binary").value;
