@@ -1,4 +1,5 @@
-let convert = document.getElementById("convert");
+let convert = document.getElementById("en-to-binary-btn");
+let convertToEn = document.getElementById("binary-to-en-btn");
 let clean = document.getElementById("clear");
 let binary_input = document.getElementById("binary").value;
 let output = document.getElementById("output");
@@ -23,7 +24,6 @@ function convertEnglish() {
 
   output.innerText = result;
 }
-convert.addEventListener("click", convertEnglish);
 
 function cleanIt() {
   let english_input = document.getElementById("english");
@@ -34,10 +34,9 @@ function cleanIt() {
   binary_input.value = "";
   output.innerText = "";
 }
+convert.addEventListener("click", convertEnglish);
 clean.addEventListener("click", cleanIt);
-
-
-convert.addEventListener("click", convertBinary);
+convertToEn.addEventListener("click", convertBinary);
 
 function convertBinary() {
   let binary_input = document.getElementById("binary").value;
@@ -45,16 +44,12 @@ function convertBinary() {
   let data = binary_input.split(" ");
   let result = "";
   // alert(data)
-  for(let i = 0; i < data.length; i++){
+  for (let i = 0; i < data.length; i++) {
     // convert word to decimal
 
-    let decimal = parseInt(data[i], 2)
-    result += String.fromCharCode(decimal)
+    let decimal = parseInt(data[i], 2);
+    result += String.fromCharCode(decimal);
   }
-  
 
-  output.innerText = result
-
+  output.innerText = result;
 }
-
-
