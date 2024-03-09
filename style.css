@@ -21,7 +21,7 @@
 }
 .inputs {
   width: 80vw;
-  height: 80vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   background: rgb(243, 242, 242, 0.3);
@@ -65,13 +65,18 @@ label {
 }
 #output {
   width: 60%;
-  height: 25vh;
+  min-height: 25vh;
   padding: 10px;
-  text-transform: capitalize;
   border-radius: 10px;
   color: white;
   border: 1px solid rgb(0, 0, 0);
   background-color: rgb(238, 238, 238, 0.2);
+}
+.inputs i {
+  cursor: pointer;
+  position: fixed;
+  top: 56vh;
+  right: 27vw;
 }
 #clear {
   width: 5vw;
